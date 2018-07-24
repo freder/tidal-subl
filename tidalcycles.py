@@ -28,17 +28,11 @@ class TidalEvalCommand(sublime_plugin.TextCommand):
 				lines = s.splitlines()
 				if lines[0] == '' and lines[-1] == '':
 					break
-			lines = [l for l in lines if l != '']
+			lines = [line for line in lines if line != '']
 			print(lines)
 
-			code = line.replace('"', '\\\"')
-			if len(lines) > 1:
-				lines = [
-					*lines
-				]
-				# TODO: evaluate multiple lines
-				# code = 
-				pass
+			lines = [line.replace('"', '\\\"') for line in lines]
+			code = ' ; '.join(lines)
 			os.system(
 				'tmux send-keys -t "{}" "{}" C-m \\;'.format(
 					sessionName, code
