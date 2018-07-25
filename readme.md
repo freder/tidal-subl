@@ -1,14 +1,26 @@
-# [WIP] tidal-subl
+# tidal-subl
 
-live-coding tidalcycles in sublime text. based on [vim-tidal](https://github.com/munshkr/vim-tidal).
+evalute tidalcycles code from within in sublime text.
 
-`tidal.sh` has been modified to work with `stack ghci`
+```haskell
+-- works for single lines
+d1 $ s "hh bd"
+
+-- and for any number of consecutive lines
+d1 $ s "hh bd"
+   # crush 4
+   # gain 0.8
+d2 $ s "cr?*8"
+```
+
+based on [vim-tidal](https://github.com/munshkr/vim-tidal). `tidal.sh` has been modified to work with `stack ghci`
 
 
 ## install
 
 - move `tidalcycles.py` to `Packages/User/`
-- adapt `tidal-subl.sh`
+- change variables in `tidal-subl.sh` to your liking
+
 
 ## key bindings
 
