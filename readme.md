@@ -13,7 +13,7 @@ d1 $ s "hh bd"
 d2 $ s "cr?*8"
 ```
 
-based on [vim-tidal](https://github.com/munshkr/vim-tidal). `tidal.sh` has been modified to work with `stack ghci`
+based on [vim-tidal](https://github.com/munshkr/vim-tidal). `tidal.sh` has been modified to work with [`stack ghci`](https://www.haskellstack.org/)
 
 
 ## install
