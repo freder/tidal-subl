@@ -1,6 +1,6 @@
 # tidal-subl
 
-evalute tidalcycles code from within in sublime text.
+evaluate tidalcycles code from within in sublime text
 
 ```haskell
 -- works for single lines
